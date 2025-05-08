@@ -8,12 +8,26 @@ This is a FastAPI-based backend that allows users to upload documents (PDFs), pr
 
 ### 🔧 1. Clone the Repository
 
+
 ```bash
 git clone https://github.com/your-username/document-query-api.git
 cd Talk-to-docs
 
 ```
-To create index and chunks (This is an offline operation)
+## 🧪 Environment Setup (with pip)
+
+Follow these steps to set up the project using `pip` and a virtual environment.
+
+### ✅ 1. Create and activate a virtual environment
+
+**On macOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+To create index and chunks (This is an offline operation to be executed mandatorily before querying)
 ```python
 python scripts/index_documents.py
 ```
